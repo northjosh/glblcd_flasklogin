@@ -1,0 +1,15 @@
+body{
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaperset.com%2Fbeautiful-background-pictures&psig=AOvVaw00zOV3TFW2cb1VexZ_bN4Z&ust=1693491482167000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLCc-8TJhIEDFQAAAAAdAAAAABAE')
+
+}
+
+#form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-label{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

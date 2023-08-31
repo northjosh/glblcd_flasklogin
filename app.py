@@ -1,9 +1,8 @@
 from flask import Flask, render_template, request
 from flask_cors import CORS, cross_origin
+
+
 app = Flask(__name__)
-
-
-
 
 cors = CORS(app)
 # app.config['CORS_HEADERS'] = 'Content-Type'
@@ -38,14 +37,13 @@ def login():
 
     print(username, password)
 
-    # try:
-    #     users.get(username) 
-    
-    # except KeyError:
-    return(render_template('home.html'))
-    
-
-
+    pwd = users.get(username) 
+    if pwd == None:
+        return(render_template('index.html', message="Username does not exist"))
+    elif password != pwd:
+        return(render_template('index.html', message="Incorrect Password"))
+    else:
+        return(render_template('home.html', name=username))
 
 
 @app.get("/greet/<name>/<age>")

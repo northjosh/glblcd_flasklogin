@@ -33,13 +33,13 @@ def index():
 @app.route("/login", methods=['POST'])
 def login():
 
-    username = request.form['username']
+    username = request.form['username'] 
     password = request.form['password']
 
     print(username, password)
 
     # try:
-    #     users.get(username) == password
+    #     users.get(username) 
     
     # except KeyError:
     return(render_template('home.html'))

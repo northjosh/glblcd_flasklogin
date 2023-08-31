@@ -9,5 +9,6 @@ if( msg.innerHTML != ''){
     msg.style.visibility = 'visible'
 }
 
-msg.innerHTML =''
+
+
 

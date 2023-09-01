@@ -39,9 +39,9 @@ def login():
 
     pwd = users.get(username) 
     if pwd == None:
-        return(render_template('index.html', message="Username does not exist"))
+        return(render_template('error.html', message="Username does not exist"))
     elif password != pwd:
-        return(render_template('index.html', message="Incorrect Password"))
+        return(render_template('error.html', message="Incorrect Password"))
     else:
         return(render_template('home.html', name=username))
 
